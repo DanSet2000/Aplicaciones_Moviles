@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Primer_Aplicacion</string>
+
+    <string name="saludo">Buenas Noches</string>
+</resources>

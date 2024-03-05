@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.EditarAlbum">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Nombre_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Nombre del Álbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Subtitulo_Editar" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Precio_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nuevo Precio ($)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Anio_Album" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Anio_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Año de Lanzamiento"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Artista_Album" />
+
+    <Switch
+        android:id="@+id/sw_Explicito_Album2"
+        android:layout_width="173dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:checked="false"
+        android:text="¿Es Explícito?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Genero_Album" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Genero_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Género Musical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Precio_Album" />
+
+    <Button
+        android:id="@+id/btn_Actualizar_Album"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Regresar_Editar_Album"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_Explicito_Album2"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <Button
+        android:id="@+id/btn_Regresar_Editar_Album"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#F44336"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Editar_Album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Editar Álbum"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Subtitulo_Editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Ingresa los Nuevos Datos"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Editar_Album" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Artista_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nuevo Artista del Álbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Nombre_Album" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.AgregarAlbum">
+
+    <TextView
+        android:id="@+id/txt_Agregar_Album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Agregar Álbum"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Regresar_Home"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#F44336"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Crear_Album"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <Button
+        android:id="@+id/btn_Crear_Album"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Agregar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input_Genero_Album"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/input_Genero_Album"
+        app:layout_constraintTop_toBottomOf="@+id/sw_Explicito_Album"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Completa los Datos"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Agregar_Album" />
+
+    <Switch
+        android:id="@+id/sw_Explicito_Album"
+        android:layout_width="173dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="¿Es Explícito?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Genero_Album" />
+
+    <EditText
+        android:id="@+id/input_Precio_Album"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Precio ($)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Anio_Album" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Artista_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre del Artista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Nombre_Album" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Genero_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Género Musical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Precio_Album" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Nombre_Album"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="144dp"
+        android:hint="Nombre del Álbum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_Anio_Album"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Año de Lanzamiento"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Artista_Album" />
+</androidx.constraintlayout.widget.ConstraintLayout>

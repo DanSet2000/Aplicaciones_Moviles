@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Servicios_Firebase</string>
+
+    <string name="saludo">Buenos Dias</string>
+    <string-array name="string_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.EditarCancion">
+
+    <Button
+        android:id="@+id/btn_Regresar_Listado_Canciones_Editar"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#F44336"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Actualizar_Cancion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_Actualizar_Cancion" />
+
+    <Button
+        android:id="@+id/btn_Actualizar_Cancion"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Regresar_Listado_Canciones_Editar"
+        app:layout_constraintEnd_toEndOf="@+id/input_Editar_Productor_Cancion"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/input_Editar_Productor_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Productor_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Productor de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Escritor_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Escritor_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Escritor de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_Editar_Letra_Cancion" />
+
+    <Switch
+        android:id="@+id/sw_Editar_Letra_Cancion"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:checked="false"
+        android:text="¿Tiene Letra?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Colaborador_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Colaborador_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Colaborador de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Duracion_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Duracion_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nueva Duración de la Canción"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Nombre_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Nombre_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:hint="Nuevo Nombre de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Editar_Datos" />
+
+    <TextView
+        android:id="@+id/txt_Editar_Datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ingresa los Nuevos Datos"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Editar_Cancion" />
+
+    <TextView
+        android:id="@+id/txt_Editar_Cancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Editar Canción"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

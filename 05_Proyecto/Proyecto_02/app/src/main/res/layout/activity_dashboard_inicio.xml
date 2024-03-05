@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A121F"
+    tools:context=".Views.DashboardInicio">
+
+    <TextView
+        android:id="@+id/txt_Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Logout"
+        app:layout_constraintStart_toEndOf="@+id/btn_Logout"
+        app:layout_constraintTop_toTopOf="@+id/btn_Logout"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/btn_Logout"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botones_regresar_personalizados"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Mi_Cuenta"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botones_personalizados"
+        android:text="Mi Cuenta"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Juegos_Populares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Juegos Populares"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Inicio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_Logout"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Logout" />
+
+    <TextView
+        android:id="@+id/txt_Ultimos_Juegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Últimos Lanzamientos"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Buscar_Catalogo"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="@+id/rv_Juegos_Populares"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Buscar_Catalogo" />
+
+    <TextView
+        android:id="@+id/txt_Mis_Listas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Mis Listas"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rv_juegos_nuevos"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="@+id/rv_juegos_nuevos"
+        app:layout_constraintTop_toBottomOf="@+id/rv_juegos_nuevos" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Juegos_Populares"
+        android:layout_width="385dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Juegos_Populares" />
+
+    <Button
+        android:id="@+id/btn_Buscar_Catalogo"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/botones_personalizados_2"
+        android:text="Descubre todo el Catálogo"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rv_Juegos_Populares"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/rv_Juegos_Populares"
+        app:layout_constraintTop_toBottomOf="@+id/rv_Juegos_Populares" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_juegos_nuevos"
+        android:layout_width="385dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Ultimos_Juegos" />
+
+    <Button
+        android:id="@+id/btn_Juegos_Favs"
+        android:layout_width="162dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/botones_personalizados_2"
+        android:text="Videojuegos Favoritos"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Juegos_2023"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mis_Listas" />
+
+    <Button
+        android:id="@+id/btn_Juegos_2023"
+        android:layout_width="162dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/botones_personalizados_2"
+        android:text="Lo que jugúe en el año 2023"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mis_Listas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

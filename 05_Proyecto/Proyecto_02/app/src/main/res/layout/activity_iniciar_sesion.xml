@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A121F"
+    tools:context=".Views.IniciarSesion">
+
+    <TextView
+        android:id="@+id/txt_Ya_Tienes_Cuenta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="¿Aún no tienes una cuenta? Regístrate"
+        android:textColor="#B8B8B8"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Login"
+        app:layout_constraintStart_toStartOf="@+id/btn_Login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Login_Correo"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/inputs_personalizados"
+        android:hint="Correo Electrónico"
+        android:paddingStart="16dp"
+        android:textColorHint="#595959"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Login"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/txt_Login"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Ingresa_Datos2" />
+
+    <TextView
+        android:id="@+id/txt_Ingresa_Datos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Ingresa tus datos:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Login"
+        app:layout_constraintStart_toStartOf="@+id/txt_Login"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Login" />
+
+    <TextView
+        android:id="@+id/txt_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="¡Bienvenido Player One!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_Header"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/img_Header"
+        app:layout_constraintTop_toBottomOf="@+id/img_Header" />
+
+    <ImageView
+        android:id="@+id/img_Header"
+        android:layout_width="114dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/space_invaders" />
+
+    <Button
+        android:id="@+id/btn_Regresar_Inicio_Login"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/botones_regresar_personalizados"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_Header"
+        app:layout_constraintEnd_toStartOf="@+id/img_Header"
+        app:layout_constraintTop_toTopOf="@+id/img_Header"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/input_Login_Contrasenia"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/inputs_personalizados"
+        android:ems="10"
+        android:paddingStart="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/input_Login_Correo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_Login_Correo"
+        app:layout_constraintTop_toBottomOf="@+id/input_Login_Correo" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="117dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/botones_personalizados"
+        android:text="¡Start!"
+        android:textColor="#FDD14C"
+        app:layout_constraintEnd_toEndOf="@+id/input_Login_Contrasenia"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/input_Login_Contrasenia"
+        app:layout_constraintTop_toBottomOf="@+id/input_Login_Contrasenia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

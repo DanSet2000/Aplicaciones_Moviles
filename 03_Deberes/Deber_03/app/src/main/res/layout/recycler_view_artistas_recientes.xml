@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_Artistas"
+    android:layout_width="130dp"
+    android:layout_height="150dp"
+    android:background="#121212">
+
+    <ImageView
+        android:id="@+id/img_Artista_Reciente"
+        android:layout_width="114dp"
+        android:layout_height="105dp"
+        android:background="@drawable/circular_background"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:scaleType="centerCrop"
+        app:srcCompat="@android:mipmap/sym_def_app_icon"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_Nombre_Artista_Reciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nombre Artista"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_Artista_Reciente"
+        app:layout_constraintStart_toStartOf="@+id/img_Artista_Reciente"
+        app:layout_constraintTop_toBottomOf="@+id/img_Artista_Reciente" />
+</androidx.constraintlayout.widget.ConstraintLayout>

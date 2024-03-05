@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.AgregarCancion">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Productor_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Productor de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Escritor_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Escritor_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Escritor de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_Letra_Cancion" />
+
+    <Switch
+        android:id="@+id/sw_Letra_Cancion"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:checked="false"
+        android:text="¿Tiene Letra?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Colaborador_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Colaborador_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Artista Colaborador de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Duracion_Cancion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Nombre_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:hint="Nombre de la Canción"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Completar_Datos" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Duracion_Cancion"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:hint="Duración de la Canción"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Nombre_Cancion" />
+
+    <TextView
+        android:id="@+id/txt_Completar_Datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Completa los Datos"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Agregar_Cancion" />
+
+    <TextView
+        android:id="@+id/txt_Agregar_Cancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Agregar Canción"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Crear_Cancion"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Agregar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Regresar_Listado_Canciones"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="54dp"
+        android:backgroundTint="#F44336"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

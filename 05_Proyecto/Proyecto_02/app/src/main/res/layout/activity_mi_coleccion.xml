@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A121F"
+    tools:context=".Views.MiColeccion">
+
+    <TextView
+        android:id="@+id/txt_Mis_Juegos3"
+        android:layout_width="121dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="28dp"
+        android:text="Mis Listas"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_Mis_Juegos" />
+
+    <TextView
+        android:id="@+id/txt_Mis_Juegos"
+        android:layout_width="129dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:text="Mis Juegos"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mi_Coleccion" />
+
+    <TextView
+        android:id="@+id/txt_Mi_Coleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mi Colección"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Regresar_Mi_Coleccion"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botones_regresar_personalizados"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Mis_Juegos"
+        android:layout_width="379dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mis_Juegos" />
+
+    <TextView
+        android:id="@+id/txt_Videojuegos_Favs"
+        android:layout_width="329dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/botones_personalizados_2"
+        android:paddingVertical="10dp"
+        android:paddingStart="15dp"
+        android:text="Videojuegos Favoritos"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mis_Juegos3" />
+
+    <TextView
+        android:id="@+id/txt_Juegos_2023"
+        android:layout_width="329dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/botones_personalizados_2"
+        android:paddingVertical="10dp"
+        android:paddingStart="15dp"
+        android:text="Lo Que Jugué en el 2023"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintTop_toTopOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/forza_horizon_5" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintTop_toTopOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/bloodborne" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintTop_toTopOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/fifa_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintTop_toTopOf="@+id/txt_Videojuegos_Favs"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/tlou" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Juegos_2023"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Juegos_2023"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/txt_Juegos_2023"
+        app:layout_constraintTop_toTopOf="@+id/txt_Juegos_2023"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/baldurs_gate" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Juegos_2023"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Juegos_2023"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="@+id/txt_Juegos_2023"
+        app:layout_constraintTop_toTopOf="@+id/txt_Juegos_2023"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/dark_souls_2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Juegos_2023"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Juegos_2023"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="@+id/txt_Juegos_2023"
+        app:layout_constraintTop_toTopOf="@+id/txt_Juegos_2023"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/tlou_2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="71dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Juegos_2023"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Juegos_2023"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="@+id/txt_Juegos_2023"
+        app:layout_constraintTop_toTopOf="@+id/txt_Juegos_2023"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/zelda_botw" />
+</androidx.constraintlayout.widget.ConstraintLayout>

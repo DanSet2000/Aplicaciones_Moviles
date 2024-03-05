@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "312494601859",
+    "project_id": "proyecto-segundo-bimestr-78ee9",
+    "storage_bucket": "proyecto-segundo-bimestr-78ee9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312494601859:android:19ab5c16c950074bc78db6",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_segundo_bimestre"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZH_X4GRcB8qFzOvknSN27EGtpMrHLeXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

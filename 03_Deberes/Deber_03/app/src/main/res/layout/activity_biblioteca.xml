@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <TextView
+        android:id="@+id/txt_Tu_Biblioteca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tu biblioteca"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Playlist"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botones_personalizados"
+        android:text="Playlists"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Tu_Biblioteca" />
+
+    <Button
+        android:id="@+id/btn_Albumes"
+        android:layout_width="89dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/botones_personalizados"
+        android:backgroundTint="#1DB954"
+        android:text="Álbumes"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Playlist"
+        app:layout_constraintStart_toEndOf="@+id/btn_Playlist"
+        app:layout_constraintTop_toTopOf="@+id/btn_Playlist"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_Artistas"
+        android:layout_width="89dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/botones_personalizados"
+        android:text="Artistas"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Albumes"
+        app:layout_constraintStart_toEndOf="@+id/btn_Albumes"
+        app:layout_constraintTop_toTopOf="@+id/btn_Albumes"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_Descargado"
+        android:layout_width="89dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/botones_personalizados"
+        android:text="Descargado"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Artistas"
+        app:layout_constraintStart_toEndOf="@+id/btn_Artistas"
+        app:layout_constraintTop_toTopOf="@+id/btn_Artistas"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_Avatar"
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/spotify_avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Tu_Biblioteca"
+        app:layout_constraintEnd_toStartOf="@+id/txt_Tu_Biblioteca"
+        app:layout_constraintTop_toTopOf="@+id/txt_Tu_Biblioteca"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <ImageView
+        android:id="@+id/img_DobleFlecha"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icono_doble_flecha"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Alfabeticamente"
+        app:layout_constraintEnd_toStartOf="@+id/txt_Alfabeticamente"
+        app:layout_constraintTop_toTopOf="@+id/txt_Alfabeticamente"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_Cuadricula"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="230dp"
+        android:src="@drawable/icono_grid"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Alfabeticamente"
+        app:layout_constraintStart_toEndOf="@+id/txt_Alfabeticamente"
+        app:layout_constraintTop_toTopOf="@+id/txt_Alfabeticamente"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="130dp"
+        android:src="@drawable/icono_search"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Tu_Biblioteca"
+        app:layout_constraintStart_toEndOf="@+id/txt_Tu_Biblioteca"
+        app:layout_constraintTop_toTopOf="@+id/txt_Tu_Biblioteca"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="UseAppTint" />
+
+    <ImageView
+        android:id="@+id/img_agregar"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/icono_agregar"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/img_search"
+        app:layout_constraintStart_toEndOf="@+id/img_search"
+        app:layout_constraintTop_toTopOf="@+id/img_search"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/Footer"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:background="#232323"
+        android:backgroundTint="#232323"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img_btn_Buscar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="84dp"
+        android:background="#232323"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icono_buscar"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_Home"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_Home"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_Home"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/txt_Buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Buscar"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_Buscar"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_Buscar"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_Buscar" />
+
+    <ImageButton
+        android:id="@+id/img_btn_Biblioteca"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="84dp"
+        android:background="#232323"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icono_biblioteca"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_Buscar"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_Buscar"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_Buscar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/txt_TuBiblioteca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Tú biblioteca"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_Biblioteca"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_Biblioteca"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_Biblioteca" />
+
+    <ImageButton
+        android:id="@+id/img_btn_Home"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="28dp"
+        android:background="#232323"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icono_home"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/Footer"
+        app:layout_constraintEnd_toEndOf="@+id/Footer"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/txt_Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_Home"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_Home"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_Home" />
+
+    <TextView
+        android:id="@+id/txt_Alfabeticamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Alfabéticamente"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Playlist" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recycler_Albumes"
+        android:layout_width="374dp"
+        android:layout_height="495dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/Footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Alfabeticamente"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

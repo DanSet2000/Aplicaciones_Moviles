@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "965710764693",
+    "project_id": "snackbar-aa097",
+    "storage_bucket": "snackbar-aa097.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965710764693:android:dc7077de4aafc20825999c",
+        "android_client_info": {
+          "package_name": "com.example.botones_y_snackbar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRfdwIhNKtx0ka47Kk1H5IxhXOBIZQVj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
